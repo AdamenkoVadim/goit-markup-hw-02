@@ -1,6 +1,8 @@
 :root {
     --main-font: "roboto";
     --secondary-font: "raleway";
+    --accent-color: #2196F3;
+    --black-txt-color:#212121;
 
 }
 
@@ -8,6 +10,7 @@
 body{
     font-family: var(--main-font), sans-serif;
     font-size: 16px;
+    line-height: 1.67;
 }
 
 /* comon styles start */
@@ -31,6 +34,7 @@ body{
     letter-spacing: 0.02em;
     color: #212121;
 }
+
 /* Logo */
 .logo{
     font-family: 'Raleway';
@@ -52,6 +56,27 @@ body{
     color: #000000;
 }
 
+/* header nav */
+
+.header-item:hover,
+.header-item:focus{
+  color:var(--accent-color);
+  cursor: pointer;
+}
+.header-contact{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+.header-contact:hover,
+.header-contact:focus{
+    color:var(--accent-color);
+    cursor: pointer;
+}
+    
+
 /* main conteny */
 
 .hero{
@@ -64,8 +89,25 @@ body{
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.button{
+.button-order{
+    font-family: inherit;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
 
+    color: #FFFFFF;
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    
 }
 
 /* about us */
@@ -181,4 +223,31 @@ body{
     color: rgba(255, 255, 255, 0.6);
     font-style: normal
 }
+
+/* Portfolio page*/
+
+/* portfolio buttons */
+
+
+
+.button-porfolio {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.button-porfolio:hover,
+.button-porfolio:focus {
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+}
+
+
 
