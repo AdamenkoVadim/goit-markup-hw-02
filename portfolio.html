@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
     <!-- fonts -->
-    <link rel="stylesheet" href="./css/styles.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header -->
@@ -24,7 +25,9 @@
           <li class="header-item link">
             <a class="header-item link" href="./index.html">Студия</a>
           </li>
-          <li class="header-item link"><a class="header-item link" href="">Портфолио</a></li>
+          <li class="header-item link">
+            <a class="header-item link current" href="">Портфолио</a>
+          </li>
           <li class="header-item link"><a class="header-item link" href="">Контакты</a></li>
         </ul>
       </nav>
@@ -42,12 +45,13 @@
 
     <main>
       <section>
+        <h2 class="visualy-hiden">Portfolio</h2>
         <ul class="button-portfolio">
-          <button class="button-porfolio" type="button">Все</button>
-          <button class="button-porfolio" type="button">Веб-сайты</button>
-          <button class="button-porfolio" type="button">Приложения</button>
-          <button class="button-porfolio" type="button">Дизайн</button>
-          <button class="button-porfolio" type="button">Маркетинг</button>
+          <li class="list"><button class="button-porfolio active" type="button">Все</button></li>
+          <li class="list"><button class="button-porfolio" type="button">Веб-сайты</button></li>
+          <li class="list"><button class="button-porfolio" type="button">Приложения</button></li>
+          <li class="list"><button class="button-porfolio" type="button">Дизайн</button></li>
+          <li class="list"><button class="button-porfolio" type="button">Маркетинг</button></li>
         </ul>
 
         <!-- filter result -->
@@ -60,8 +64,8 @@
               width="370"
               height="294"
             />
-            <h3>Технокряк</h3>
-            <p class="description">Веб-сайт</p>
+            <h3 class="filter-title">Технокряк</h3>
+            <p class="filter-description">Веб-сайт</p>
           </li>
           <li class="filter-item link">
             <img
@@ -70,8 +74,8 @@
               width="370"
               height="294"
             />
-            <h3>Постер New Orlean vs Golden Star</h3>
-            <p class="description">Дизайн</p>
+            <h3 class="filter-title">Постер New Orlean vs Golden Star</h3>
+            <p class="filter-description">Дизайн</p>
           </li>
           <li class="filter-item link">
             <img
@@ -80,18 +84,18 @@
               width="370"
               height="294"
             />
-            <h3>Ресторан Seafood</h3>
+            <h3 class="filter-title">Ресторан Seafood</h3>
             <p class="description">Приложение</p>
           </li>
           <li class="filter-item link">
             <img src="./images/Filter portfolio/prime.jpg" alt="prime" width="370" height="294" />
-            <h3>Проект Prime</h3>
-            <p class="description">Маркетинг</p>
+            <h3 class="filter-title">Проект Prime</h3>
+            <p class="filter-description">Маркетинг</p>
           </li>
           <li class="filter-item link">
             <img src="./images/Filter portfolio/boxes.jpg" alt="boxes" width="370" height="294" />
-            <h3>Проект Boxes</h3>
-            <p class="description">Приложение</p>
+            <h3 class="filter-title">Проект Boxes</h3>
+            <p class="filter-description">Приложение</p>
           </li>
           <li class="filter-item link">
             <img
@@ -100,8 +104,8 @@
               width="370"
               height="294"
             />
-            <h3>Inspiration has no Borders</h3>
-            <p class="description">Веб-сайт</p>
+            <h3 class="filter-title">Inspiration has no Borders</h3>
+            <p class="filter-description">Веб-сайт</p>
           </li>
           <li class="filter-item link">
             <img
@@ -110,14 +114,14 @@
               width="370"
               height="294"
             />
-            <h3>Издание Limited Edition</h3>
-            <p class="description">Дизайн</p>
+            <h3 class="filter-title">Издание Limited Edition</h3>
+            <p class="filter-description">Дизайн</p>
           </li>
 
           <li class="filter-item link">
             <img src="./images/Filter portfolio/lab.jpg" alt="lab" width="370" height="294" />
-            <h3>Growing Business</h3>
-            <p class="description">Маркетинг</p>
+            <h3 class="filter-title">Growing Business</h3>
+            <p class="filter-description">Маркетинг</p>
           </li>
           <li class="filter-item link">
             <img
@@ -126,8 +130,8 @@
               width="370"
               height="294"
             />
-            <h3>Growing Business</h3>
-            <p class="description">Приложение</p>
+            <h3 class="filter-title">Growing Business</h3>
+            <p class="filter-description">Приложение</p>
           </li>
         </ul>
       </section>
@@ -149,10 +153,12 @@
             >
           </li>
           <li class="footer-item link">
-            <a class="footer-link-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="footer-link-contact link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
           <li class="footer-item link">
-            <a class="footer-link-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="footer-link-contact link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </address>
